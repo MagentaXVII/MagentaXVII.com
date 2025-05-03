@@ -1,0 +1,570 @@
+body
+    font-family: 'Lato', sans-serif
+    color: #FFF
+    padding: 0
+    margin: 0
+    background-image: url(/IMG/Background/1.jpeg)
+    background-size: 100%
+    overflow-x: hidden
+
+    #theMenu
+        background-color: black
+        width: 100%
+        position: absolute
+        z-index: 1
+        top: -100vh
+        transition: 1s ease all
+
+        .close
+            position: absolute
+            padding: 2% 90%
+            
+            i
+                font-size: 60px
+                cursor: pointer
+                color: #ffffff
+                display: block
+        #voice
+            margin: 3% 80px
+            padding: 2px 30px
+            border: none
+            background: #478154 
+            cursor: pointer
+            transition: all 1s ease
+            border-top-left-radius: 29px
+            border-bottom-right-radius: 29px
+            &:hover
+                background: #002d57
+            a
+                color: #fff
+                text-decoration: none
+
+        .menuContainer
+            padding: 5%
+            text-align: center
+            justify-content: space-between
+            
+            ul
+                list-style: none
+                button
+                    color: white
+                    padding: 10px 20px
+                    border: 1px solid white
+                    background: none
+
+                
+                li
+                    justify-content: space-between
+                    padding: 30px
+                   
+                    a
+                        text-decoration: none
+                        color: #fff
+                        font-size: 19px
+                      
+    .assistant
+        width: 100%
+        height: 100%
+        background-color: #000207
+        position: absolute
+        top: -100vh  
+        z-index: 1  
+        text-align: center
+     
+        .btns
+
+            button
+                margin: 0 30px
+                padding: 10px 10px
+                border: 1px solid white
+                cursor: pointer
+                background: black
+                color: white
+    nav
+        background-color: black
+        padding: 20px 50px
+        
+       
+    
+        h a
+            cursor: pointer
+            text-decoration: none
+            color: #ffff            
+
+        .navTop
+            display: flex
+            align-items: center
+            justify-content: space-between
+            
+                                        
+            button
+                padding: 2px 30px
+                border: none
+                align-items: center
+                color: #fff
+                background: #005e8a
+                cursor: pointer
+                transition: all 1s ease
+                border-top-left-radius: 29px
+                border-bottom-right-radius: 29px
+                &:hover
+                    background: #002d57
+                    align-items: center
+                    display: flex
+                a
+                    color: #fff
+                    text-decoration: none
+                    
+            .searchInput 
+                color: #fff
+                border-radius: 50px
+                border: none  
+                background: none
+                &::placeholder
+                    color: #fff
+        .navBottom
+            display: flex
+            justify-content: center
+            align-items: center
+            font-size: 13px
+            .menuItems
+                margin-right: 50px
+                cursor: pointer
+                font-weight: 400
+                transition: all 1s ease
+                &:hover
+                    color: #0070a3 
+        #bag
+            display: none
+    .slider
+        overflow: hidden
+        transition: all 1s ease-in-out
+       
+        .sliderWrapper
+            display: flex
+            width: 500vw
+            transition: all 1s ease-in-out
+
+            .sliderItem
+                width: 100vw
+                display: flex
+                align-items: center
+                position: relative
+                
+            .sliderItem:nth-child(1)
+                clip-path: polygon(0 16%, 100% 0%, 100% 100%, 0% 100%)
+                background: #000000
+                a
+                    color: #ffffff
+                img
+                    cursor: pointer
+
+                .sliderPrice
+                    position: absolute
+                    top: 50%
+                    right: 67px
+                    color: #f1f1f1
+            .sliderItem:nth-child(2)
+                background: #000
+            .sliderItem:nth-child(3)
+                clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%)
+                background: #000
+                color: #f5f1f1
+                .sliderPrice
+                    position: absolute
+                    top: 60%
+                    right: 67px
+                    color: #f1f1f1
+            .sliderItem:nth-child(4)
+                clip-path: polygon(0 10%, 100% 0%, 100% 80%, 0% 100%)
+                background: #000
+                
+                button
+                    position: absolute
+                    padding: 10px 30px
+                    background: none
+                    border: 1px solid #fff
+                    color: white
+                    cursor: pointer
+                    top: 150px
+                    left: -100px
+                 
+            .sliderTitle
+                position: absolute
+                top: 10%
+                right: 10%
+                font-size: 30px
+                font-weight: 900
+                text-align: center
+
+            .sliderPrice
+                position: absolute
+                top: -10%
+                right: 60px
+                font-size: 40px
+                font-weight: 900
+                text-align: center
+                button
+                    position: relative
+                    padding: 10px 10px
+                    background: none
+                    border: 1px solid #fff
+                    color: white
+                    cursor: pointer
+                    left: 40%
+    .gallery
+        padding: 50px
+        display: flex
+        color: black
+        background: #000000
+        clip-path: polygon(50% 20%, 100% 1%, 100% 90%, 50% 90%, 0 90%, 0 0)
+
+        .galleryItem
+            position: relative
+            flex: 1
+            padding: 50px
+            
+            .galleryImg
+                width: 100%
+                cursor: pointer
+
+                img
+                    padding: 50% 50%    
+            .theBtns
+                display: flex
+                justify-content: center
+                align-items: center
+                button
+                    padding: 10px 30px
+                    background: none
+                    border: 1px solid #fff
+                    color: white
+                    cursor: pointer
+            
+    .newVisuals
+        display: flex
+        clip-path: polygon(50% 0, 100% 15%, 100% 100%, 0 100%, 0 15%)
+
+        .nvItem
+            flex: 1
+            background: black
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            text-align: center
+            color: #919191
+            
+            img
+                width: 100%
+                height: 700px
+            .nvTitle
+                font-size: 19px
+            button
+                background: #349dbd
+                border-top-left-radius: 80px
+                border-bottom-right-radius: 80px
+                border: none
+                padding: 10px 40px
+                font-size: 15px
+    footer
+        display: flex
+
+        .footerLeft
+            flex: 2
+            display: flex
+            justify-content: space-between
+            padding: 50px
+            background: #252525
+        
+            .fMenuTitle
+                font-size: 16px
+            .fList
+                padding: 0
+                list-style: none
+
+                .fListItem
+                    margin-bottom: 10px
+                    color: #afafaf
+                    cursor: pointer
+        .footerRight
+            flex: 1
+            padding: 50px 
+            flex-direction: column
+            justify-content: space-between
+            h1
+                font-size: 16px
+                color: #b9b9b9
+
+            .fInput
+                padding: 5px
+                border: none
+                background: black
+                color: white
+            .fButton
+                padding: 7px
+                background: black
+                color: white
+                border: none
+                cursor: pointer
+        .fIcons
+            display: flex
+        .fIcon
+            width: 30px
+            height: 30px
+            margin-right: 20px
+            cursor: pointer
+        .copyright
+            font-weight: 300
+            font-size: 12px
+
+@media screen and (max-width:580px) 
+    body
+        background-color: #0c0c0c
+        background-repeat: no-repeat
+        width: 100%
+        overflow-x: hidden
+        
+        .theMenu
+            height: 80%
+        #times 
+            display: none
+    
+            ul
+                padding: 20px 0
+            #shuter
+                display: block
+
+        #voice
+            display: none
+
+            .shuter
+                display: block
+              
+        nav
+            padding: 20px
+            background: black
+
+            h a
+                margin-left: 40px
+
+            button
+                display: none
+            
+            #bag
+                display: block
+    
+            .search
+                display: none
+        .navBottom
+            flex-wrap: wrap
+
+            .menuItems
+                position: relative
+                margin: 30px 1px
+                font-weight: 700
+                font-size: 12px
+            #about
+                display: none  
+        .slider
+        
+            .sliderItem:nth-child(1)
+                clip-path: none
+
+                button
+                    position: absolute
+                    padding: 10px 4px
+                
+            .sliderTitle
+                display: none
+            .sliderItem:nth-child(4)
+                button
+                    position: absolute
+                    top: 90%
+    #gallery
+        clip-path: none
+        background: none
+
+        display: block
+
+        .galleryItem
+            margin:  10% -18%
+            width: 100%
+            height: 20%
+           
+            background: black
+        .galleryItem:nth-child(1)
+            clip-path: polygon(0 0, 100% 18%, 100% 100%, 0 90%)
+        .galleryItem:nth-child(2)
+            clip-path: polygon(0 23%, 100% 0, 100% 86%, 0% 100%)
+        .galleryItem:nth-child(3)
+            clip-path: polygon(0 0, 100% 18%, 100% 100%, 0 90%)
+            img
+                width: 100%
+    #photos
+        clip-path: none
+        display: block
+       
+
+        .nvItem
+            background: none
+        button
+            display: none
+
+        #photoOne
+            clip-path: polygon(0 23%, 100% 0, 100% 86%, 0% 100%)
+
+        img
+          width: 100%
+          height: 100%
+          clip-path: polygon(0 0, 100% 18%, 100% 100%, 0 90%)
+    footer
+        flex-direction: column
+        align-items: center 
+
+        .footerLeft
+            padding: 20px
+            width: 75%
+
+        .footerRight
+            padding: 20px
+            width: 75%
+            align-items: center
+
+@media screen and (max-width:580px)
+
+    body
+        background-color: #0c0c0c
+        background-repeat: no-repeat
+        width: 100%
+        overflow-x: hidden
+        
+        .theMenu
+            height: 80%
+        #times 
+            display: none
+    
+            ul
+                padding: 20px 0
+            #shuter
+                display: block
+
+        #voice
+            display: none
+
+            .shuter
+                display: block
+              
+        nav
+            padding: 20px
+            background: black
+
+            h a
+                margin-left: 40px
+
+            button
+                display: none
+            
+            #bag
+                display: block
+    
+            .search
+                display: none
+        .navBottom
+            flex-wrap: wrap
+
+            .menuItems
+                position: relative
+                margin: 30px 1px
+                font-weight: 700
+                font-size: 12px
+            #about
+                display: none  
+        .slider
+        
+            .sliderItem:nth-child(1)
+                clip-path: none
+
+                button
+                    position: absolute
+                    padding: 10px 4px
+                
+            .sliderTitle
+                display: none
+            .sliderItem:nth-child(4)
+                button
+                    position: absolute
+                    top: 90%
+    #gallery
+        clip-path: none
+        background: none
+        display: block
+ 
+        .galleryItem
+            margin:  10% -18%
+            width: 100%
+            height: 20%
+            background: black
+        .galleryItem:nth-child(1)
+            clip-path: polygon(0 0, 100% 18%, 100% 100%, 0 90%)
+        .galleryItem:nth-child(2)
+            clip-path: polygon(0 23%, 100% 0, 100% 86%, 0% 100%)
+        .galleryItem:nth-child(3)
+            clip-path: polygon(0 0, 100% 18%, 100% 100%, 0 90%)
+            img
+                width: 100%
+    #photos
+        clip-path: none
+        display: block
+       
+
+        .nvItem
+            background: none
+        button
+            display: none
+
+        #photoOne
+            clip-path: polygon(0 23%, 100% 0, 100% 86%, 0% 100%)
+
+        img
+          width: 100%
+          height: 100%
+          clip-path: polygon(0 0, 100% 18%, 100% 100%, 0 90%)
+    footer
+        flex-direction: column
+        align-items: center 
+
+        .footerLeft
+            padding: 20px
+            width: 75%
+
+        .footerRight
+            padding: 20px
+            width: 75%
+            align-items: center
+
+
+
+@media screen and (max-width:1007px)
+
+    body         
+        nav
+
+            button
+                display: none
+            #bag
+                display: block
+            
+       
+        
+    
+
+
+
+
+
+                    
+
+                
+
+    
