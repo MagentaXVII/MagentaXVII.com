@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sasss/img.css">
+    
+    <title>IMAGE</title>
+</head>
+<body id="body" class="body">
+    <div id="theMenu" class="theMenu">
+         <!--div class="close"><i ><a id="times" onclick="closer()">&times;</a></i></div-->
+
+            <!--button  id="voice" ><a onclick="bckVoice()">Voice<br>Assistant</a></button-->
+        <div class="menuContainer">
+            <ul>
+                <li><a href="/unavailable/index.html"><strong>MEN</strong></a></li>
+                <li><a href="/unavailable/index.html"><strong>WOMEN</strong></a></li>
+                <li><a href="/unavailable/index.html"><strong>BAGS</strong></a></li>
+                <a onclick="closer()"><button>Close</button></a>
+
+            </ul>
+        </div>
+    </div>
+    </div>
+    <nav id="nav" >
+        <div class = "navTop">
+            <div class = "navItem"> 
+                <h> <a href="index.html"><strong>I M A G E</strong></a></h>
+            </div>
+        <div class = "navItem"> 
+            <div class="search">
+                    <!--input type="text" placeholder = "search...." class="searchInput">
+                <img src="IMG/search.png" width="20" height="20" alt="" class="searchIcon"-->
+            </div>
+        </div>
+        <div class="navItem">
+            <a onclick="opener()"><img src="img/nav/shopping_bag.svg" id="bag" width="25" height="25" ></a>
+        </div>
+        </div>
+        <div class="navBottom"> 
+            <input type="text" placeholder="Search" >
+        </div>
+       </nav>
+       <div class="slider">
+        <div class="sliderWrapper">
+            <div class="sliderItem">
+            <a href=""> <img src="img/nav/Bags/Bags.jpeg" width="400px" height= "400px" alt="" class="slidering"></a>
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle"><span class="auto-type">Fear</br>Level</br>= 0%</span></h1>
+                <h2 class="sliderPrice"> <button><a href="/unavailable/index.html">Shop</a></button></h2>
+            </div>
+           
+        </div>
+    </div>  
+    </div>
+    <div id="photos" class="newVisuals">
+        <div class="nvItem">
+            <img src="Img/landing/photo (2).jpeg" id="photoOne" alt="" class="nvImg">
+        </div>
+        <div class="nvItem">
+            <h3 class="nvTitle"></h3>
+            <h1 class="nvTitle"></h1>
+            <h1 class="nvTitle"></h1>
+            <a href="/socials/index.html"><button class="nvButton">Contact</button></a>
+        </div>
+        <div class="nvItem">
+            <img src="img/landing/photo.jpeg" alt="" class="nvImg">
+        </div>
+    </div>
+    <footer>
+        <div class="footerLeft">
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">About Us</h1>
+                <ul class="fList">
+                    <li class="fListItem">company</li>
+                    <li class="fListItem">Contact</li>
+                    <li class="fListItem">Stores</li>
+                </ul>
+
+                <img src="" alt="">
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Useful Links</h1>
+                <ul class="fList">
+                    <li class="fListItem">Support</li>
+                    <li class="fListItem">Refund</li>
+                    <li class="fListItem">Feedback</li>
+                    <li class="fListItem">Stories</li>
+                </ul>
+            </div>
+
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Services</h1>
+                <ul class="fList">
+                    <li class="fListItem">News</li>
+                    <li class="fListItem">Events</li>
+    
+                </ul>
+            </div>
+        </div>
+        <div class="footerRight">
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Subscribe to our newsletter</h1>
+                <div class="fMail">
+                    <input type="text" placeholder="your@email.com" class="fInput">
+                    <button class="fButton">Join!</button>
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Follow Us</h1>
+                <div class="fIcons">
+                    <!--a href="https://x.com/Magentaiiov"><img src="IMG/social/1 (1).svg" alt="" class="fIcon"></a>
+                    <a href="https://www.youtube.com/channel/UC6bnSwTZXSl8GRy4O8J0ulg"><img src="IMG/social/1 (2).svg" alt="" class="fIcon"></a>
+                    <a href="https://www.tiktok.com/@magentaix"><img src="IMG/social/1 (3).svg" alt="" class="fIcon"></a-->
+                    <a href="https://www.instagram.com/magentaixvii/?img_index=1"><img src="img/social/instagram.svg" alt="" class="fIcon"></a>
+                </div>
+            <div class="footerRightMenu">
+                <span class="copyright">@IMAGE. All Rights Reserved.2025</span>
+            </div>
+        </div>
+    </footer>
+    <script src="/Image/Js/script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    
+    <script>
+     function start() {
+        document.getElementById("theMenu").style.top="0vh";
+        document.getElementById("assistantMenu").style.transition="1s ease all";
+        document.getElementById("body").style.overflow="hidden";
+     }
+     function opener() {
+        document.getElementById("theMenu").style.top="0vh";
+        
+     }
+     function menuBtn() {
+        document.getElementById("theMenu").style.top="0vh";
+        document.getElementById("theMenu").style.transition="1s ease all";
+        document.getElementById("body").style.overflow="hidden";
+     }
+     function closer() {
+        document.getElementById("theMenu").style.top="-100vh";
+        document.getElementById("theMenu").style.transition=" 1s ease all";
+        document.getElementById("body").style.overflowY="scroll";
+
+     }
+
+    </script>
+ 
+</body>
+</html>
